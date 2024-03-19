@@ -1,0 +1,26 @@
+/* TEXT INPUTS */
+*:focus{
+    outline: none;
+    box-shadow: none!important;
+}
+.form-control{
+	border: 1px solid $c-input-border;
+	background-color: $c-input-bg;
+	color: $c-text-primary;
+	font-size: 13px;
+	border-radius: $border-radius-primary;
+    &:disabled,
+    &:disabled:hover{
+        border: $c-input-border-disabled;
+        background-color: $c-input-bg-disabled;
+        color: $c-text-disabled;
+        box-shadow: none;
+        cursor: default;
+    }
+    &:focus{
+        border: 1px solid $c-primary;
+    }
+    &:hover{
+        border: 1px solid $c-primary-hover;
+    }
+}

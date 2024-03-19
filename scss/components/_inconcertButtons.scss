@@ -1,0 +1,240 @@
+.btn{
+    height: 32px;
+    font: 500 $text-s13-16;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $border-radius-primary;
+    padding-left: $spacing-value*2;
+    padding-right: $spacing-value*2;
+    flex-shrink: 0;
+    &:not(.btn-secondary):not(.btn-secondary-icon){
+        border: none;
+    }
+    i{
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        flex-shrink: 0;
+    }
+
+    &:hover, 
+    &:focus{
+        text-decoration: none;
+        outline: none;
+        box-shadow: none;
+    }
+    // Button Colors_ [primary / secondary / tertiary / tertiaryIcon Checked]
+    &.btn-primary{
+        background-color: $c-button-primary;
+
+        &,
+        i{
+            color: $white;
+        }
+
+        &:hover,
+        &:focus{
+            background-color: $c-button-primary-hover;
+
+            &,
+            i{
+                color: $white;
+            }
+        }
+
+        &:active{
+            background-color: $c-button-primary-active;
+
+            &,
+            i{
+                color: $white;
+            }
+        }
+
+        &:disabled,
+        &:disabled:hover{
+            background-color: $c-button-primary-disabled;
+            pointer-events: none;
+
+            &,
+            i{
+                color: $c-text-disabled;
+            }
+        }
+    }
+
+    &.btn-secondary{
+        background-color: $c-button-secondary;
+        border: $c-button-secondary-border;
+
+        &,
+        i{
+            color: $c-text-primary;
+        }
+
+        &:hover,
+        &:focus{
+            border-color: $c-button-secondary-border-hover;
+            background-color: $c-button-secondary-hover;
+
+            &,
+            i{
+                color: $c-text-primary;
+            }
+        }
+
+        &:active{
+            border-color: $c-button-secondary-border-active;
+            background-color: $c-button-secondary-active;
+
+            &,
+            i{
+                color: $c-button-secondary-text-active;
+            }
+        }
+
+        &.active{
+            border-color: $c-button-secondary-border-selected;
+            background-color: $c-button-secondary-hover;
+            
+            &,
+            i{
+                color: $c-button-secondary-text-selected;
+            }
+        }
+
+        &:disabled,
+        &:disabled:hover{
+            background-color: $white;
+            border-color: $c-primary-disabled;
+            pointer-events: none;
+
+            &,
+            i{
+                color: $c-text-disabled;
+            }
+        }
+        
+    }
+    &.btn-tertiary{
+        background-color: $c-button-tertiary;
+
+        &,
+        i{
+            color: $c-text-primary;
+        }
+
+        &:hover,
+        &:focus{
+            background-color: $c-button-tertiary-hover;
+
+            &,
+            i{
+                color: $c-text-primary;
+            }
+        }
+
+        &:active{
+            background-color: $c-button-tertiary-active;
+
+            &,
+            i{
+                color: $c-button-tertiary-text-active;
+            }
+        }
+
+        &:disabled,
+        &:disabled:hover{
+            background-color: $transparent;
+            pointer-events: none;
+
+            &,
+            i{
+                color: $c-text-disabled;
+            }
+        }
+    }
+    /* ICONS BUTTONS */
+    &.btn-icon{        
+        border-radius: $border-radius-primary;
+        text-align: center;
+
+        &:not(.btn-small):not(.btn-xsmall){
+            width: 32px;
+            padding: $spacing-value-min;
+        }
+
+        &.btn-small{
+            width: 24px;
+            height: 24px;
+            padding: 0;
+        }
+
+        &.btn-xsmall{
+            width: $icon-container-sm;
+            height: $icon-container-sm;
+            padding: 0;
+            border-radius: $border-radius-secondary/2;
+
+            i{
+                font-size: $text-icon-size-md;
+                line-height: $icon-container-sm;
+            }
+        }
+    }
+    &.btn-icon-rounded{
+        border-radius: $border-radius-round;
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        
+        i{
+            font-size: 10px;
+            padding-left: 0;
+        }
+    }
+
+    &.btn-icon-rounded-small{
+        border-radius: $border-radius-round;
+        width: 16px;
+        height: 16px;
+        padding: 0;
+        
+        i{
+            font-size: 10px;
+            line-height: 14px;
+            width: 14px;
+        }
+    }
+
+    &.btn-icon-text{
+        border-radius: $border-radius-primary;
+        i{
+            margin-right: $spacing-value-min;
+            font-size: 14px;
+        }
+
+        &:not(.btn-secondary):not(.btn-secondary-icon){
+            padding: $spacing-value-min $spacing-value*2;
+        }
+
+        &.btn-secondary,
+        &.btn-secondary-icon{
+            padding: $spacing-value-min ($spacing-value*2)-1px;
+        }
+    }
+
+    &.btn-text{
+        border-radius: $border-radius-primary;
+
+        &:not(.btn-secondary):not(.btn-secondary-icon){
+            padding: $spacing-value $spacing-value*2;
+        }
+
+        &.btn-secondary,
+        &.btn-secondary-icon{
+            padding: $spacing-value ($spacing-value*2)-1px;
+        }
+    }
+}

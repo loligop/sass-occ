@@ -1,0 +1,34 @@
+@import "_bootstrapOverride";
+@import "_bootstrapVarOverride";
+@import "_inconcertVariables";
+@import "components/_inconcertButtons";
+@import "components/_inconcertInputs";
+@import "components/_inconcertPills";
+@import "components/inconcertDropdowns";
+@import "structure/_inconcertPageHeaders";
+*{
+    font-family: $main-font-family;
+}
+.page-header *,
+.page-header *::before,
+.page-header *::after{
+    box-sizing: border-box;
+}
+/* USER STATUS COLORS */
+.userLoggedAvailable .user-status-button .fas {
+	color: #00CC66;
+}
+
+.userLoggedAway .user-status-button .fas,
+.userLoggedCustom .user-status-button .fas {
+	color: #FFCC00;
+}
+
+.userLoggedBusy .user-status-button .fas {
+	color: #CC0033;
+}
+
+.userLoggedDisable .user-status-button .fas,
+.userLoggedOffLine .user-status-button .fas {
+	color: #888D8F;
+}

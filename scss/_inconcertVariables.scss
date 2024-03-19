@@ -1,0 +1,264 @@
+/* ---------------------------------------------------------------------------
+-- Color Palette --------------------------------------------------------------
+-----------------------------------------------------------------------------*/
+// Base Colors
+$transparent:                              transparent;
+$white:                                  #FFFFFF;
+$off-white:                              #FAFAFA;
+
+// Main Colors_
+$c-primary:                               #0066CC;
+$c-primary-hover:                         #003399;
+$c-primary-active:                        #000033;
+$c-secondary:                               $white;
+$c-secondary-border:                      #999999;
+$c-secondary-hover:                       #EEEEEE;
+$c-secondary-border-hover:                #666666;
+
+$c-primary-disabled:                      #999999;
+$c-secondary-disabled:                    #EEEEEE;
+$c-button-disabled-bg:                    #DDDDDD;
+
+// Border Colors
+$c-border-primary:                        #CCCCCC;
+
+// Text Colors
+$c-text-primary:                          #333333;
+$c-text-secondary:                        #666666;
+$c-text-disabled:                         #999999;
+$c-text-highlight:                        #006699;
+
+// Background Colors
+$c-bg-primary:                            #E5E9EE;
+$c-bg-secondary:                          #F6F6F6;
+$c-bg-tertiary:                           #E6F0FA;
+
+// Alert Colors
+$c-error:                                 #AD0101;
+$c-error-stroke:                          #CE6767;
+$c-error-bg:                              #F5E7E7;
+
+$c-success:                               #006614;
+$c-success-stroke:                        #006614;
+$c-success-bg:                            #F0FAF0;
+
+$c-warning:                               #996633;
+$c-warning-stroke:                        #FFE597;
+$c-warning-bg:                            #FEFBEC;
+
+$c-info:                                  #3366CC;
+$c-info-stroke:                           #BDCDEE;
+$c-info-bg:                               #E7EEFA;
+
+$c-notifications:                         #FF0000;
+$c-notifications-hover:                   #FA7A7A;
+
+// Shadow types
+$box-shadow-e1:                             0px 1px 10px 0px rgba(82, 93, 100, 0.04); //Cards
+$box-shadow-e2:                             0px 1px 10px 0px rgba(82, 93, 100, 0.15); //Cards active
+$box-shadow-e3:                             0px 2px 6px 0px rgba(0, 0, 0, 0.33); //Tooltips
+$box-shadow-e4:                             0px 1px 10px 0px rgba(82, 93, 100, 0.50); //
+$box-shadow-e9:                             0px 5px 6px 0px rgba(0, 0, 0, 0.20), 0px 3px 16px 0px rgba(0, 0, 0, 0.12), 0px 9px 12px 0px rgba(0, 0, 0, 0.14); //Modales
+
+//Buttons & Links
+$c-button-primary:                          $c-primary;
+$c-button-primary-hover:                    $c-primary-hover;
+$c-button-primary-active:                   $c-primary-active;
+$c-button-primary-disabled:                 $c-button-disabled-bg;
+
+$c-button-secondary:                        $c-secondary;
+$c-button-secondary-border:                 1px solid $c-secondary-border;
+$c-button-secondary-hover:                  $c-secondary-hover;
+$c-button-secondary-border-hover:           $c-secondary-border-hover;
+$c-button-secondary-active:                 $c-secondary-hover;
+$c-button-secondary-border-active:          $c-primary-active;
+$c-button-secondary-text-active:            $c-primary-active;
+$c-button-secondary-text-selected:          $c-primary-active;
+$c-button-secondary-border-selected:        $c-primary-active;
+
+$c-button-secondaryIcon:                    $c-secondary;
+$c-button-secondaryIcon-border:             1px solid $c-secondary-border;
+$c-button-secondaryIcon-hover:              $c-secondary-hover;
+$c-button-secondaryIcon-text-hover:         $c-primary-hover;
+$c-button-secondaryIcon-border-hover:       $c-primary-hover;
+$c-button-secondaryIcon-active:             $c-secondary-hover;
+$c-button-secondaryIcon-text-active:        $c-primary-active;
+$c-button-secondaryIcon-border-active:      $c-primary-active;
+
+$c-button-tertiary:                         $transparent;
+$c-button-tertiary-hover:                   $c-secondary-hover;
+$c-button-tertiary-active:                  $transparent;
+$c-button-tertiary-text-active:             $c-primary-active;
+
+$c-button-tertiaryIcon:                     $transparent;
+$c-button-tertiaryIcon-hover:               $c-secondary-hover;
+$c-button-tertiaryIcon-text-hover:          $c-primary-hover;
+$c-button-tertiaryIcon-active:              $c-secondary-hover;
+$c-button-tertiaryIcon-text-active:         $c-primary-active;
+
+$c-button-toolbar:                          $c-secondary-hover;
+$c-button-toolbar-text-hover:               $c-primary-hover;
+$c-button-toolbar-drag:                     #DDDDDD;
+$c-button-toolbar-border-drag:              $c-primary-active;
+$c-button-toolbar-disabled:                 $c-button-disabled-bg;
+
+$c-link-primary:                            $c-text-highlight;
+$c-link-primary-hover:                      $c-primary-hover;
+$c-link-primary-active:                     $c-primary-active;
+$c-link-primary-disabled:                   $c-primary-disabled;
+
+// Tab Colors 
+$c-tabs-primary-hover:                      $c-secondary-hover;
+$c-tabs-primary-active:                     $c-primary;
+
+// Dropdown Colors
+$c-dropdown-bg:                             $white;
+$c-dropdown-bg-hover:                       $c-secondary-hover;
+$c-dropdown-bg-active:                     #DDDDDD;
+
+// List Colors
+$c-list-bg-selected:                         #DDDDDD;
+
+// Accordion List Colors
+$c-collapsible-bg-hover:                    $c-secondary-hover;
+$c-collapsible-bg-active:                   $c-secondary-hover;
+$c-collapsible-body-bg-active:              $c-bg-secondary;
+
+// Input Colors
+$c-input-border:                           #AAAAAA;
+$c-input-border-hover:                       $c-primary-hover;
+$c-input-border-active:                      $c-primary;
+$c-input-border-focus:                       $c-text-secondary;
+$c-input-border-disabled:                    $c-primary-disabled;
+$c-input-border-filled:                      #666666;
+$c-input-bg:                                 $white;
+$c-input-bg-disabled:                        $c-secondary-disabled;
+
+$c-form-switch-active:                       $c-primary;
+$c-form-switch-inactive:                     $c-input-border;
+
+$c-form-check:                             #333333;
+$c-form-check-hover:                         $c-primary-hover;
+$c-form-check-checked:                       $c-primary;
+$c-form-check-disabled:                      $c-primary-disabled;
+$c-form-check-checked-disabled-opacity:      .35;
+
+$c-form-img-check-bg:                        $c-bg-secondary;
+$c-form-img-check-bg-hover:                  $c-secondary-hover;
+$c-form-img-check-border-hover:              $c-primary-hover;
+$c-form-img-check-border-active:             $c-primary-active;
+
+$c-form-icon-check-bg:                       $c-bg-secondary;
+$c-form-icon-check-border-hover:              $c-primary-hover;
+$c-form-icon-check-border-active:            $c-primary-active;
+$c-form-icon-check-bg-active:                $c-secondary-hover;
+
+// Chip Colors
+$c-chip-text:                                 $c-primary-active;
+$c-chip-bg:                                 #E6E9F0;
+
+// Tooltip Colors
+$c-tooltip-icon:                            #5A7581;
+
+// Widget Colors
+$c-widget-01:                               #6AD2FF;
+$c-widget-02:                               #FF18F6;
+$c-widget-03:                               #FF7800;
+$c-widget-04:                               #04D350;
+
+// Illustrations
+$c-illus-boolean-approved:                  #00B288;
+$c-illus-boolean-error:                     #FF0000;
+$c-illus-radio-inactive:                    #DDDDDD;
+$c-illus-radio-active:                      #BBBBBB;
+$c-illus-radio-inactive-secondary:          $c-text-disabled;
+$c-illus-radio-active-secondary:            $c-text-primary;
+
+// Modal Colors
+$c-modal-backdrop-bg:                       rgba(207, 226, 255, 0.55); //#CFE2FF;
+$c-modal-header-bg:                         #151B26;
+
+$c-bread-icon:                              #3399FF;
+$c-selected-icon:                           #3399FF;
+
+/*------------------------------------------------
+-- Chat Predefined BG-Gradients_ --------------------------------------------------
+-------------------------------------------------*/
+$chat-predefined-bg-01: #000000;
+$chat-predefined-bg-02: #9D46E2;
+$chat-predefined-bg-03: #0038FF;
+$chat-predefined-bg-04: #FFB800;
+$chat-predefined-bg-05: #F3960A;
+$chat-predefined-bg-06: #F30A0A;
+$chat-predefined-bg-07: #03D73E;
+$chat-predefined-bg-08: #00D6C9;
+$chat-predefined-bg-09: linear-gradient(89.81deg, #FB5DCF 2.49%, #001CFF 137.05%);
+// $chat-predefined-bg-10: none;
+
+$ic-theme-colors: (
+    "1": $chat-predefined-bg-01,
+    "2": $chat-predefined-bg-02,
+    "3": $chat-predefined-bg-03,
+    "4": $chat-predefined-bg-04,
+    "5": $chat-predefined-bg-05,
+    "6": $chat-predefined-bg-06,
+    "7": $chat-predefined-bg-07,
+    "8": $chat-predefined-bg-08,
+    "9": $chat-predefined-bg-09
+);
+
+
+/*------------------------------------------------
+-- Chat Animation Image-Preview_ --------------------------------------------------
+-------------------------------------------------*/
+$ic-animation-prev: (
+    backInUp: "0 0",
+    slideInUp: "20% 0",
+    fadeIn: "40% 0",
+    fadeInUpBig: "60% 0",
+    fadeInBottomLeft: "80% 0",
+    fadeInBottomRight: "100% 0",
+);
+
+
+
+/*------------------------------------------------
+-- Structure Base Definitions --------------------------------------------------
+-------------------------------------------------*/
+
+    // ----------------------------------------------------------------------------------
+    // - Custom Spacings / Margins / Radius
+    // ----------------------------------------------------------------------------------
+    $spacing-value-min:                 4px;
+    $spacing-value:                     8px;
+    $spacing-value-negative:            -8px;
+    $spacing-value-min-negative:        -4px;
+
+    $border-radius-primary:             6px;
+    $border-radius-secondary:           8px;
+    $border-radius-round:               50%;
+
+    // ----------------------------------------------------------------------------------
+    // - Texts_ main
+    // ----------------------------------------------------------------------------------
+    $main-font-family: 'Roboto', sans-serif;
+    $icon-font-family: 'Font Awesome 5 Pro';
+
+    $text-s16-19:               16px/19px $main-font-family;
+    $text-s14-24:               14px/24px $main-font-family;
+    $text-s14-16:               14px/16px $main-font-family;
+    $text-s13-19:               13px/19px $main-font-family;
+    $text-s13-16:               13px/16px $main-font-family;
+    $text-s12-16:               12px/16px $main-font-family;
+    $text-s12-14:               12px/14px $main-font-family;
+
+    $text-icon-size-sm:         10px;
+    $text-icon-size-md:         12px;
+    $text-icon-size-lg:         16px;
+
+    // ----------------------------------------------------------------------------------
+    // - Icon Container width/height
+    // ----------------------------------------------------------------------------------
+    $icon-container-sm:         $spacing-value*2;
+    $icon-container-md:         $spacing-value*3;
+    $icon-container-lg:         $spacing-value*4;

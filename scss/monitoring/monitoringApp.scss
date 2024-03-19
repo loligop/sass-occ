@@ -1,0 +1,15 @@
+.monitoringMainContainer .page-header {
+	position: fixed;
+	z-index: 1;
+	right: 0px;
+	left: 0px;
+	& + .monitorMainPanelContainer,
+	& + .monitorServicePanelContainer{
+		height: calc(100% - 56px);
+		overflow: hidden;
+		position: relative;
+		top: 56px;
+		width: 100%;
+		background-color: #e5e9ee;
+	}
+}

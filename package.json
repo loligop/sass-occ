@@ -1,0 +1,23 @@
+{
+  "name": "inconcert-occ-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-global-css": "node-sass --include-path scss scss/inconcertGlobalStyles.scss css/inconcertGlobalStyles.css",
+    "build-dev-css": "node-sass --include-path scss scss/devApp.scss css/devApp.css",
+    "build-provisioning-css": "node-sass --include-path scss scss/provisioning/provisioningApp.scss css/provisioningApp.css",
+    "build-administration-css": "node-sass --include-path scss scss/administration/administrationApp.scss css/administrationApp.css",
+    "build-batch-management-css": "node-sass --include-path scss scss/batch_management/batchManagementApp.scss css/batchManagementApp.css",
+    "build-sn-css": "node-sass --include-path scss scss/social_networks/snApp.scss css/snApp.css",
+    "build-monitoring-css": "node-sass --include-path scss scss/monitoring/monitoringApp.scss css/monitoringApp.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-global-css && npm run build-dev-css && npm run build-provisioning-css && npm run build-administration-css && npm run build-batch-management-css && npm run build-sn-css && npm run build-monitoring-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
