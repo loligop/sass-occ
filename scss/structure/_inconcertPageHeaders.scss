@@ -90,6 +90,8 @@
     }
     /* NAVIGATION BACK BUTTON */
     .navigation-button-container{
+		display: flex;
+        align-items: center;
         .back-title-button{
             display: flex;
             border: none;
